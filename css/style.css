@@ -123,3 +123,7 @@ article, section{
     z-index: 100;
     
 }
+
+#publicidad{
+    display: block !important;
+}
