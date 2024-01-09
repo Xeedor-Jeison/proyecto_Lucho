@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="event planner">
+    <meta name="keywords" content="">
+    <meta name="author" content="Jeison Ramos Xedoor">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/rH3vCkw/16x16-px-L-Evento.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>L'evento Producciones</title>
+</head>
+
+<body>
+
+    <head>
+        <section id="home">
+            <div class="d-flex justify-content-center align-items-center fondoNaranja p-3 ">
+                <p class="text-black me-2">
+                    Deja en nostros tu evento.
+                </p>
+                <a class="fw-bold text-black ancord-inicial" href="">Cotiza tu evento <i
+                        class="bi bi-arrow-right text-black"></i></a>
+            </div>
+        </section>
+
+        <nav class="navbar navbar-expand-lg bg-black z-1 position-sticky top-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img class="img-fluid logo w-50" src="https://i.ibb.co/GsjPB7G/Logo-Peque-o.png"
+                        alt="Logo l'Evento Producciones">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar">
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand" href="./index.html">
+                            <img class="img-fluid logo w-75" src="https://i.ibb.co/GsjPB7G/Logo-Peque-o.png" alt="logo">
+                        </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body justify-content-end" id="navbarTogglerDemo02">
+                        <a class="pt-2 ps-4 pe-4 m-1 nav-aconrds text-white rounded-5 fw-bold navbar-brand text-xl-center nav-link"
+                            href="#home">HOME</a>
+                        <ul class="navbar-nav  justify-content-center">
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link nav-aconrds text-white dropdown-toggle p-2 ps-4 pe-4 m-1  text-xl-center nav-link rounded-5 fw-bold navbar-brand"
+                                    href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    SERVICIOS
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu fondoNaranja">
+                                    <li><a class="dropdown-item dropdown-nav p-2 ps-4 pe-4 text-black rounded-5 fw-bold"
+                                            href="#publicidad">Publicidad</a></li>
+                                    <li><a class="dropdown-item dropdown-nav p-2 ps-4 pe-4 text-black rounded-5 fw-bold"
+                                            href="#audioVisuales">Audio Visuales</a></li>
+                                    <li><a class="dropdown-item dropdown-nav p-2 ps-4 pe-4 text-black rounded-5 fw-bold"
+                                            href="#estructuras">Estructuras</a></li>
+                                    <li><a class="dropdown-item dropdown-nav p-2 ps-4 pe-4 text-black rounded-5 fw-bold"
+                                            href="#catering">Catering Coffe</a></li>
+                                    <li><a class="dropdown-item dropdown-nav p-2 ps-4 pe-4 text-black rounded-5 fw-bold"
+                                            href="#mobiliarios">Mobiliarios</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a class="p-2 ps-4 pe-4 m-1 nav-aconrds text-white text-xl-center  rounded-5 fw-bold nav-link navbar-brand"
+                            href="#galeria">GALERIA</a>
+                        <a class="p-2 ps-4 pe-4 m-1 nav-aconrds text-white text-xl-center nav-link rounded-5 fw-bold navbar-brand"
+                            href="#contact">CONTACTO</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="bi bi-arrow-bar-right svg  me-3" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8m-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5" />
+                        </svg>
+                        <a target="_blank" href="https://wa.link/6leabn">
+                            <button class="text-dark fondo-ancord fw-bold p-3 rounded-4">COTIZAR EVENTO</button>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </head>
+
+    <main>
+        <section>
+            <div class="d-flex justify-content-around align-items-center pb-5">
+
+                <div class="d-flex flex-column align-items-center">
+                    <h1 class="display-1 text-center py-4 fw-bold">
+                        Realizamos de tu evento la mejor experiencia para tu publico
+                    </h1>
+
+                    <a target="_blank" href="https://wa.link/6leabn">
+                        <button class="text-dark fondo-ancord fw-bold boton ">PLANEA TU EVENTO</button>
+                    </a>
+                </div>
+
+                <img class="img-fluid w-50" src="https://i.ibb.co/925vQjN/logo-sin-Fondo.jpg"
+                    alt="Logo L'evento Producciones">
+            </div>
+        </section>
+
+        <aside>
+            <a href="https://wa.link/6leabn">
+                <div id="boton-flotante">
+
+                </div>
+            </a>
+
+        </aside>
+        <section id="servicios">
+            <article class="py-5" id="publicidad">
+                <div class="d-flex justify-content-around align-items-center">
+                    <div class="w-50">
+                        <img class="img-fluid" src="https://i.ibb.co/DpYxBSJ/installation-of-an-advertising-stand-1.jpg" alt="Imagen de publicidad">
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                        <h2 class="text-center colorLetra fw-bold py-5 display-2">
+                            Publicidad
+                        </h2>
+                        <br>
+                        <ul class="fs-3">
+                            <li>Branding</li>
+                            <li>Backing</li>
+                            <li>Stand</li>
+                            <li>Diseño gráfico</li>
+                            <li>Avisos publicitarios y luminosos</li>
+                            <li>Impresión a gran formato</li>
+                            <li>Islas comerciales</li>
+                            <li>Vallas publicitarias</li>
+                            <li>Escenografias</li>
+                            <li>Carrovalla y bicivalla</li>
+                        </ul>
+                        <a class="py-5" target="_blank" href="https://wa.link/6leabn">
+                            <button class="text-dark boton-article fondo-ancord fw-bold">PLANEA TU EVENTO</button>
+                        </a>
+                    </div>
+
+
+                </div>
+
+            </article>
+
+            <article class="py-5" id="audioVisuales">
+
+                <div class="d-flex justify-content-around align-items-center">
+
+                    <div class="d-flex flex-column align-items-center">
+                        <h2 class="text-center colorLetra fw-bold py-5 display-2">
+                            Audio Visuales
+                        </h2>
+                        <br>
+                        <ul class="fs-3">
+                            <li>Video Walls</li>
+                            <li>Pantalla leds</li>
+                            <li>Registro leds</li>
+                            <li>Registro fotográfico </li>
+                            <li>Registro de video camara</li>
+                            <li>Tv de todas las medidas</li>
+                            <li>Compuadoras portátitles</li>
+                            <li>Video beams con pantalla translúcidas</li>
+                        </ul>
+                        <a class="py-5" target="_blank" href="https://wa.link/6leabn">
+                            <button class="text-dark boton-article fondo-ancord fw-bold">PLANEA TU EVENTO</button>
+                        </a>
+                    </div>
+                    <div class="w-50">
+                        <img class="img-fluid" src="https://i.ibb.co/4RX7LKJ/installation-of-a-video-wall-in-a-shopping-center.jpg" alt="Imagen Audio visuales">
+                    </div>
+                </div>
+
+            </article>
+
+            <article class="py-5" id="estructuras">
+
+                <div class="d-flex justify-content-around align-items-center">
+                    <div class="w-50">
+                        <img class="img-fluid" src="https://i.ibb.co/8cfcP8n/installation-of-hangar-tents.jpg" alt="Imagen Estructuras">
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                        <h2 class="text-center colorLetra fw-bold py-5 display-2">
+                            Estructuras
+                        </h2>
+                        <br>
+                        <ul class="fs-3">
+                            <li>Tarimas</li>
+                            <li>Carpas</li>
+                            <li>Carpas tipo hangar</li>
+                            <li>Carpas climatizadas</li>
+                            <li>Muros de contención</li>
+                            <li>Vallas de seguridad</li>
+                        </ul>
+                        <a class="py-5" target="_blank" href="https://wa.link/6leabn">
+                            <button class="text-dark boton-article fondo-ancord fw-bold">PLANEA TU EVENTO</button>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="py-5" id="catering">
+
+
+                <div class="d-flex justify-content-around align-items-center">
+
+                    <div class="d-flex flex-column align-items-center">
+                        <h2 class="text-center colorLetra fw-bold py-5 display-2">
+                            Catering Coffe
+                        </h2>
+                        <br>
+                        <ul class="fs-3">
+                            <li>Break</li>
+                            <li>Refrigeración</li>
+                            <li>Buffete</li>
+                            <li>Bebidas</li>
+                            <li>Picadas</li>
+                        </ul>
+                        <a class="py-5" target="_blank" href="https://wa.link/6leabn">
+                            <button class="text-dark boton-article fondo-ancord fw-bold">PLANEA TU EVENTO</button>
+                        </a>
+                    </div>
+                    <div class="w-50">
+                        <img class="img-fluid" src="https://i.ibb.co/vmrJYJP/food-stand-installation-for-an-advertising-campaig.jpg" alt="Imagen catering">
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="py-5" class="border-bottom mb-5 pb-5" id="mobiliarios">
+
+                <div class="d-flex justify-content-around align-items-center">
+                    <div class="w-50">
+                        <img class="img-fluid" src="https://i.ibb.co/vXy963t/lounge-room-furniture.jpg" alt="Imagen mobiliarios">
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                        <h2 class="text-center colorLetra fw-bold py-5 display-2">
+                            Mobiliarios
+                        </h2>
+                        <br>
+
+                        <ul class="fs-3">
+                            <li>Counters</li>
+                            <li>Salas Lounge</li>
+                            <li>Alfombras (rojas, azules etc)</li>
+                            <li>Separadores de fila mesas y silla tipo bar</li>
+                            <li>Dispensador de agua</li>
+                            <li>Abanicos industriales</li>
+                            <li>Plantas eléctricas</li>
+                        </ul>
+                        <a class="py-5" target="_blank" href="https://wa.link/6leabn">
+                            <button class="text-dark boton-article fondo-ancord fw-bold">PLANEA TU EVENTO</button>
+                        </a>
+                    </div>
+
+                </div>
+            </article>
+        </section>
+
+        <section id="galeria">
+            <h2 class="text-center colorLetra fw-bold m-5 p-5">
+                GALERIA
+            </h2>
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner div-container">
+                    <div class="carousel-item active div-container">
+                        <img src="https://i.ibb.co/vXy963t/lounge-room-furniture.jpg" class="d-block w-100 img-fluid" alt="...">
+                    </div>
+                    <div class="carousel-item div-container">
+                        <img src="https://i.ibb.co/vmrJYJP/food-stand-installation-for-an-advertising-campaig.jpg" class="d-block w-100 img-fluid" alt="...">
+                    </div>
+                    <div class="carousel-item div-container">
+                        <img src="https://i.ibb.co/8cfcP8n/installation-of-hangar-tents.jpg" class="d-block w-100 img-fluid" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev z-0" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next z-0" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="text-center colorLetra fw-bold m-5 p-5">
+                Contactanos
+            </h2>
+
+            <div class="d-flex justify-content-center align-items-center">
+                <aside>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.9036687242465!2d-74.80904822419099!3d10.970643455579717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42d38fb7e6b9f%3A0x9004e4ed9ce2e42!2sCra.%2023b%20%2364-59%2C%20Suroccidente%2C%20Barranquilla%2C%20Atl%C3%A1ntico!5e0!3m2!1ses!2sco!4v1704745611061!5m2!1ses!2sco"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </aside>
+
+                <div class="d-flex flex-column">
+                    <div class="m-5">
+                        <h3 class=" colorLetra fw-bold">
+                            Whatsapp
+                        </h3>
+                        <a class="fs-5 px-2 whatsapp" href="https://wa.link/6leabn">
+                            <img src="https://i.ibb.co/Gx35dVp/whatsapp.png" alt="">+57 316-8260563
+                        </a>
+                    </div>
+                    <div class="m-5">
+                        <h3 class="colorLetra fw-bold">
+                            Redes sociales
+                        </h3>
+                        <a href="" class="px-2">
+                            <img src="https://i.ibb.co/v3tzYpX/instagram.png" alt="Logo Instagram">
+                        </a>
+                        <a href="" class="px-2">
+                            <img src="https://i.ibb.co/KXZsxCF/facebook.png" alt="Logo facebook">
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pt-5">
+        <p class="d-flex justify-content-center fs-6">
+            Created by Jeison Ramos (Xedoor) 2024
+        </p>
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="./modulos/misVariables.js"></script>
+    <script src="./modulos/misFunciones.js"></script>
+    <script src="./javascript/main.js"></script>
+</body>
+
+</html>
